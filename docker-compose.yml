@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - 3077:3077
+    networks:
+      - mirrora_network
+networks:
+  mirrora_network:
